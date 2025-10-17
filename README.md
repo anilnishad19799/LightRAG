@@ -1,6 +1,6 @@
 # LightRAG 🚀
 
-**LightRAG** is an advanced Retrieval-Augmented Generation (RAG) framework that allows indexing and querying PDF or TXT documents using a combination of vector and graph databases.
+**LightRAG** is an advanced Retrieval-Augmented Generation (RAG) framework that allows indexing and querying pdf or txt documents using a combination of vector and graph databases.
 
 <small>
    
@@ -109,6 +109,7 @@ LightRAG/
 - [LangChain](https://www.langchain.com/)
 - [Neo4j](https://neo4j.com/)
 - [OpenAI](https://openai.com/)
+- [LightRAG](https://github.com/HKUDS/LightRAG) (official)
 
 ### Contributing
 - Fork the repo, make changes, and open a pull request.
