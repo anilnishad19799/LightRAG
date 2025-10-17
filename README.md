@@ -33,6 +33,7 @@ LightRAG/
 │   ├── uploaded_files/      Uploaded files for indexing
 │   └── docker-compose.yml   Docker Compose configuration
 ```
+```
 ## Prerequisites
 - Python 3.10+
 - Docker & Docker Compose 
@@ -64,7 +65,7 @@ In `.env`, set `NEO4J_URI=bolt://neo4j:7687` and `NEO4J_USERNAME=neo4j`.
 Give the same `YOUR_LOCAL_PATH` as Neo4j volume path in Docker Compose to persist data.  
 
    
-7. Make `.env` file at src/ folder lcoation and add environment variables in `.env`:
+6. Make `.env` file at src/ folder lcoation and add environment variables in `.env`:
 NEO4J_URI=bolt://localhost:7687
 NEO4J_USERNAME=neo4j
 NEO4J_PASSWORD=your_password
@@ -72,6 +73,7 @@ RERANK_MODEL=cohere_model
 RERANK_BINDING_API_KEY=cohere_api_key
 RERANK_BINDING_HOST=cohere_host_api
 
+```
 ## Running the Application (Local) 
 cd LightRAG/project/src
 uvicorn app:app --host 0.0.0.0 --port 8000
