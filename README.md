@@ -42,41 +42,41 @@ LightRAG/
 - Cohere API key (optional) for reranking
 
 ## 2. Installation (Local Python)
-1. Clone the repository:
-git clone https://github.com/anilnishad19799/LightRAG.git
-cd LightRAG/project/src
+- 1. Clone the repository:
+- git clone https://github.com/anilnishad19799/LightRAG.git
+- cd LightRAG/project/src
 
 ## 3. Create and activate a virtual environment:
-python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
+- python -m venv venv
+- source venv/bin/activate   # Linux/Mac
+- venv\Scripts\activate      # Windows
 
 ## 4. Install dependencies:
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 `This step is important to run code`
 ## 5. Neo4j Setup using Docker
-Open Docker Desktop (Windows) or terminal (Linux/Ubuntu) and run:
-change below LOCAL_PATH with your PATH and then run below command 
-`docker run --publish=7474:7474 --publish=7687:7687 --volume="YOUR_LOCAL_PATH:/data" neo4j`
-Go to [http://localhost:7474/](http://localhost:7474/), login with username `neo4j` and password `neo4j`, then change the password.  
-Use this new password in your `.env` file as `NEO4J_PASSWORD`.  
-In `.env`, set `NEO4J_URI=bolt://neo4j:7687` and `NEO4J_USERNAME=neo4j`.  
-Give the same `YOUR_LOCAL_PATH` as Neo4j volume path in Docker Compose to persist data.  
+- Open Docker Desktop (Windows) or terminal (Linux/Ubuntu) and run:
+- change below LOCAL_PATH with your PATH and then run below command 
+- `docker run --publish=7474:7474 --publish=7687:7687 --volume="YOUR_LOCAL_PATH:/data" neo4j`
+- Go to [http://localhost:7474/](http://localhost:7474/), login with username `neo4j` and password `neo4j`, then change the password.  
+- Use this new password in your `.env` file as `NEO4J_PASSWORD`.  
+- In `.env`, set `NEO4J_URI=bolt://neo4j:7687` and `NEO4J_USERNAME=neo4j`.  
+- Give the same `YOUR_LOCAL_PATH` as Neo4j volume path in Docker Compose to persist data.  
 
    
 ## 6. Make `.env` file at src/ folder lcoation and add environment variables in `.env`:
-NEO4J_URI=bolt://localhost:7687
-NEO4J_USERNAME=neo4j
-NEO4J_PASSWORD=your_password
-RERANK_MODEL=cohere_model
-RERANK_BINDING_API_KEY=cohere_api_key
-RERANK_BINDING_HOST=cohere_host_api
+- NEO4J_URI=bolt://localhost:7687
+- NEO4J_USERNAME=neo4j
+- NEO4J_PASSWORD=your_password
+- RERANK_MODEL=cohere_model
+- RERANK_BINDING_API_KEY=cohere_api_key
+- RERANK_BINDING_HOST=cohere_host_api
 
 ## Running the Application (Local) 
-cd LightRAG/project/src
-uvicorn app:app --host 0.0.0.0 --port 8000
-Open your browser at http://127.0.0.1:8000 to upload PDFs/TXT files and query documents.
+- cd LightRAG/project/src
+- uvicorn app:app --host 0.0.0.0 --port 8000
+- Open your browser at http://127.0.0.1:8000 to upload PDFs/TXT files and query documents.
 
 ## Running with Docker
 1. Build and start containers:
