@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LightRAG Dashboard</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f0f2f8; color: #333; }
+header { background: #4b6cb7; color: #fff; padding: 20px; text-align: center; font-size: 28px; }
+.container { max-width: 800px; margin: 40px auto; background: #fff; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+h2 { color: #4b6cb7; margin-bottom: 15px; }
+input[type="file"], input[type="text"], button, select { width: 100%; padding: 12px; margin: 8px 0 16px; border-radius: 6px; border: 1px solid #ccc; font-size: 16px; }
+button { background: #4b6cb7; color: white; border: none; cursor: pointer; transition: background 0.3s ease; }
+button:hover { background: #3a539b; }
+.response-box { padding: 15px; background: #eef2f7; border-radius: 8px; min-height: 80px; white-space: pre-wrap; font-family: monospace; overflow-x: auto; }
+.chat-box { max-height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: #fafafa; margin-top: 20px; }
+.chat-message { margin-bottom: 12px; padding: 10px 14px; border-radius: 10px; max-width: 80%; }
+.user { background: #4b6cb7; color: white; align-self: flex-end; }
+.bot { background: #eef2f7; color: #333; align-self: flex-start; }
+.chat { display: flex; flex-direction: column; }
+</style>
+</head>
+<body>
+
+<header>LightRAG Dashboard</header>
+
+<div class="container">
+  <h2>Upload & Index Document</h2>
+  <input type="file" id="fileInput" />
+  <button onclick="uploadAndIndex()">Upload & Index</button>
+  <div id="uploadResponse" class="response-box"></div>
+
+  <hr>
+
+  <h2>Query RAG</h2>
+  <input type="text" id="queryInput" placeholder="Type your query..." />
+  <select id="modeSelect">
+    <option value="local">local</option>
+    <option value="global">global</option>
+    <option value="naive">naive</option>
+    <option value="mix">mix</option>
+    <option value="hybrid" selected>hybrid</option>
+  </select>
+  <button onclick="queryRAG()">Query</button>
+
+  <div class="chat-box" id="chatBox"></div>
+</div>
+
+<script>
+async function uploadAndIndex() {
+  const fileInput = document.getElementById("fileInput");
+  const responseBox = document.getElementById("uploadResponse");
+  if (fileInput.files.length === 0) { alert("Select a file."); return; }
+
+  const formData = new FormData();
+  formData.append("file", fileInput.files[0]);
+  responseBox.textContent = "Uploading and indexing...";
+
+  try {
+    const res = await fetch("/upload_and_index", { method: "POST", body: formData });
+    const data = await res.json();
+    responseBox.textContent = JSON.stringify(data, null, 2);
+  } catch (err) {
+    responseBox.textContent = "Error: " + err;
+  }
+}
+
+async function queryRAG() {
+  const query = document.getElementById("queryInput").value;
+  const mode = document.getElementById("modeSelect").value;
+  const chatBox = document.getElementById("chatBox");
+  if (!query) { alert("Enter a query."); return; }
+
+  const userMsg = document.createElement("div");
+  userMsg.className = "chat-message user";
+  userMsg.textContent = query;
+  chatBox.appendChild(userMsg);
+  chatBox.scrollTop = chatBox.scrollHeight;
+
+  const formData = new FormData();
+  formData.append("query", query);
+  formData.append("mode", mode);
+
+  try {
+    const res = await fetch("/query_rag", { method: "POST", body: formData });
+    const data = await res.json();
+
+    const botMsg = document.createElement("div");
+    botMsg.className = "chat-message bot";
+    botMsg.textContent = data.response ?? "No answer";
+    chatBox.appendChild(botMsg);
+    chatBox.scrollTop = chatBox.scrollHeight;
+  } catch (err) {
+    const botMsg = document.createElement("div");
+    botMsg.className = "chat-message bot";
+    botMsg.textContent = "Error: " + err;
+    chatBox.appendChild(botMsg);
+  }
+
+  document.getElementById("queryInput").value = "";
+}
+</script>
+
+</body>
+</html>

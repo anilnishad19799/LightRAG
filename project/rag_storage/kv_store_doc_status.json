@@ -1,0 +1,27 @@
+{
+  "doc-b71d7d742c5cb730b2abe5748ec0612f": {
+    "status": "processed",
+    "chunks_count": 9,
+    "chunks_list": [
+      "chunk-ef843a7d3f6af2968ec44d50cf88eb07",
+      "chunk-12d1009a34f6b44161ba7c45ca955681",
+      "chunk-3c2403ecd4281754f44411045c6cf29d",
+      "chunk-59d20e13344fd51ff3d7dd185eab9e4f",
+      "chunk-53537ff8e375b3ef983e380498e61823",
+      "chunk-ab722c0326f95ad6ef559924ce2b5cd5",
+      "chunk-6d74c9338a8bfe174a8195c3081fe563",
+      "chunk-b8b7dc25591e769f28e1db250fce4150",
+      "chunk-e7cae1ea2a435c3d411bd637b35a86ef"
+    ],
+    "content_summary": "Some Common Human Diseases\nBIOLOGY\n 264\nNotes\nMODULE - 4\nEnvironment and\nHealth\nIn the previous lesson you have read about the diseases due to nutritional\ndeficiencies. In this lesson, you will learn about diseases caused due to other reasons.\nOBJECT...",
+    "content_length": 48541,
+    "created_at": "2025-10-16T11:50:49.417015+00:00",
+    "updated_at": "2025-10-16T11:53:48.339088+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251016_115049_8c54d09c",
+    "metadata": {
+      "processing_start_time": 1760615449,
+      "processing_end_time": 1760615628
+    }
+  }
+}

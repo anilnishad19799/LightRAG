@@ -1,0 +1,410 @@
+{
+  "doc-b71d7d742c5cb730b2abe5748ec0612f": {
+    "relation_pairs": [
+      [
+        "Contaminated Articles",
+        "Epidemic"
+      ],
+      [
+        "Hepatitis",
+        "Hepatitis B Virus"
+      ],
+      [
+        "Malarial Parasite",
+        "Mosquitoes"
+      ],
+      [
+        "Nervous System",
+        "Rabies Virus"
+      ],
+      [
+        "Anti-Rabies Injections",
+        "Rabies"
+      ],
+      [
+        "Influenza",
+        "Influenza Vaccine"
+      ],
+      [
+        "Measles",
+        "Mosquitoes"
+      ],
+      [
+        "Cancer",
+        "Malignant Tumor"
+      ],
+      [
+        "Oozing Semisolid Material",
+        "Symptoms"
+      ],
+      [
+        "Osteoporosis",
+        "Symptoms of Osteoporosis"
+      ],
+      [
+        "BCG Vaccination",
+        "Tuberculosis"
+      ],
+      [
+        "Calcium Supplements",
+        "Patients"
+      ],
+      [
+        "Common Human Diseases",
+        "Influenza"
+      ],
+      [
+        "Cholera",
+        "Houseflies"
+      ],
+      [
+        "ELISA Test",
+        "HIV"
+      ],
+      [
+        "Anti-Typhoid Inoculation",
+        "Typhoid"
+      ],
+      [
+        "AIDS",
+        "Sexually Transmitted Diseases"
+      ],
+      [
+        "Diseases",
+        "Non-communicable Diseases"
+      ],
+      [
+        "Poliomyelitis",
+        "Vaccine"
+      ],
+      [
+        "Osteoporosis",
+        "Physiotherapist"
+      ],
+      [
+        "Exercise",
+        "Osteoporosis"
+      ],
+      [
+        "Reproductive Tract Infections (RTIs)",
+        "STIs"
+      ],
+      [
+        "Female Anopheles Mosquitoes",
+        "Malaria"
+      ],
+      [
+        "Cancer",
+        "Common Human Diseases"
+      ],
+      [
+        "Drug Abuse",
+        "Short-Term Effects"
+      ],
+      [
+        "Houseflies",
+        "Vector"
+      ],
+      [
+        "Syphilis",
+        "Treponema Pallidum"
+      ],
+      [
+        "Malaria",
+        "Symptoms of Malaria"
+      ],
+      [
+        "AIDS",
+        "Common Human Diseases"
+      ],
+      [
+        "Dengue Fever",
+        "Dengue Hemorrhagic Fever"
+      ],
+      [
+        "Symptoms",
+        "Treponema Pallidum"
+      ],
+      [
+        "Hepatitis",
+        "Potable Water"
+      ],
+      [
+        "Cardiovascular Diseases",
+        "Symptoms of Cardiovascular Diseases"
+      ],
+      [
+        "Common Human Diseases",
+        "Hepatitis"
+      ],
+      [
+        "Epidemic",
+        "Pandemic"
+      ],
+      [
+        "Education of STD",
+        "Prevention Measures"
+      ],
+      [
+        "Filariasis",
+        "Wuchereria Bancrofti"
+      ],
+      [
+        "Dengue",
+        "Mosquitoes"
+      ],
+      [
+        "Condom",
+        "HIV"
+      ],
+      [
+        "Human Diseases",
+        "Salmonella Typhi"
+      ],
+      [
+        "Drug Abuse",
+        "Long-Term Effects"
+      ],
+      [
+        "Amoebiasis",
+        "Symptoms of Amoebiasis"
+      ],
+      [
+        "Cardiovascular Diseases",
+        "cholesterol deposition"
+      ],
+      [
+        "Cornybacterium Diphthereae",
+        "Human Diseases"
+      ],
+      [
+        "Common Human Diseases",
+        "Malaria"
+      ],
+      [
+        "Diabetes Mellitus",
+        "blood glucose levels"
+      ],
+      [
+        "HIV",
+        "Homosexuality"
+      ],
+      [
+        "Dengue",
+        "Symptoms of Dengue Fever"
+      ],
+      [
+        "Human Diseases",
+        "Vibrio Cholerae"
+      ],
+      [
+        "Aedes Aegypti",
+        "Dengue"
+      ],
+      [
+        "Influenza",
+        "Symptoms of Influenza"
+      ],
+      [
+        "Addiction",
+        "Smoking"
+      ],
+      [
+        "Diabetes Mellitus",
+        "Symptoms of Diabetes Mellitus"
+      ],
+      [
+        "Common Human Diseases",
+        "Measles"
+      ],
+      [
+        "Incubation Period",
+        "Symptoms"
+      ],
+      [
+        "Human Diseases",
+        "Mycobacterium Tuberculosis"
+      ],
+      [
+        "Hip Fractures",
+        "Osteoporosis"
+      ],
+      [
+        "Common Human Diseases",
+        "Gonorrhea"
+      ],
+      [
+        "HIV",
+        "Prostitution"
+      ],
+      [
+        "Contact or Scabs",
+        "Symptoms"
+      ],
+      [
+        "Pathogen",
+        "Reservoir"
+      ],
+      [
+        "AIDS",
+        "HIV"
+      ],
+      [
+        "Dietary Calcium",
+        "Patients"
+      ],
+      [
+        "Common Human Diseases",
+        "Drug Abuse"
+      ],
+      [
+        "Addiction",
+        "Drug Abuse"
+      ],
+      [
+        "Pathogens",
+        "Reproductive Tract Infections (RTIs)"
+      ],
+      [
+        "Common Human Diseases",
+        "Nutritional Deficiencies"
+      ],
+      [
+        "Addiction",
+        "Drinking"
+      ],
+      [
+        "Malaria",
+        "Malarial Parasite"
+      ],
+      [
+        "Aedes Aegypti",
+        "Human Immunodeficiency Virus"
+      ],
+      [
+        "Inoculation",
+        "Vaccination"
+      ],
+      [
+        "Dengue",
+        "Symptoms of Dengue Hemorrhagic Fever"
+      ],
+      [
+        "Cholera",
+        "Cholera Vaccination"
+      ],
+      [
+        "Common Human Diseases",
+        "Diphtheria"
+      ],
+      [
+        "Rabies",
+        "Rabies Virus"
+      ],
+      [
+        "Benign Tumor",
+        "Malignant Tumor"
+      ],
+      [
+        "Common Human Diseases",
+        "Syphilis"
+      ],
+      [
+        "Osteoporosis",
+        "bone density"
+      ],
+      [
+        "Gonorrhoea",
+        "Syphilis"
+      ],
+      [
+        "Cancer",
+        "Proto-Oncogenes"
+      ],
+      [
+        "Amoebiasis",
+        "Entamoeba Histolytica"
+      ],
+      [
+        "Common Human Diseases",
+        "Hypertension"
+      ],
+      [
+        "Cholera",
+        "Electrolytes"
+      ],
+      [
+        "Drugs",
+        "Teenagers"
+      ],
+      [
+        "Hepatitis",
+        "Hepatitis B Vaccine"
+      ],
+      [
+        "Gonorrhea",
+        "Neisseria Gonorrhoeae"
+      ],
+      [
+        "HIV",
+        "Syringe and Needle"
+      ],
+      [
+        "Prolonged Contact",
+        "Symptoms"
+      ],
+      [
+        "Common Human Diseases",
+        "Leprosy"
+      ],
+      [
+        "Common Human Diseases",
+        "Diabetes Mellitus"
+      ],
+      [
+        "Filariasis",
+        "Symptoms of Filariasis"
+      ],
+      [
+        "Human Diseases",
+        "Mycobacterium Leprae"
+      ],
+      [
+        "Hepatitis",
+        "Symptoms of Hepatitis"
+      ],
+      [
+        "Common Human Diseases",
+        "Polio"
+      ],
+      [
+        "Cancer",
+        "Diseases"
+      ],
+      [
+        "Rabies",
+        "Symptoms of Rabies"
+      ],
+      [
+        "Dengue Fever",
+        "Mosquito"
+      ],
+      [
+        "Human Diseases",
+        "Plasmodium"
+      ],
+      [
+        "Pathogen",
+        "Rabid Animals"
+      ],
+      [
+        "Mycobacterium Tuberculosis",
+        "Symptoms"
+      ]
+    ],
+    "count": 100,
+    "create_time": 1760615628,
+    "update_time": 1760615628,
+    "_id": "doc-b71d7d742c5cb730b2abe5748ec0612f"
+  }
+}
