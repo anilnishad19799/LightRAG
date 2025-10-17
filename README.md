@@ -42,7 +42,7 @@ LightRAG/
 - Cohere API key (optional) for reranking
 
 ## 2. Installation (Local Python)
-- 1. Clone the repository:
+- Clone the repository:
 - git clone https://github.com/anilnishad19799/LightRAG.git
 - cd LightRAG/project/src
 
