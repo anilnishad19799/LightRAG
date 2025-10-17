@@ -207,6 +207,6 @@ marimo/_lsp/
 __marimo__/
 
 
-# path for neo4j docker 
+# path for neo4j docker set up at neo4j setup
 project/neo4j_setup/*
 notebook/neo4j_database/*  
