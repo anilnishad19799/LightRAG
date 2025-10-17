@@ -55,10 +55,10 @@ venv\Scripts\activate      # Windows
 pip install -r requirements.txt
 
 `This step is important to run code`
-5. ## Neo4j Setup using Docker
+## 5. Neo4j Setup using Docker
 Open Docker Desktop (Windows) or terminal (Linux/Ubuntu) and run:
 change below LOCAL_PATH with your PATH and then run below command 
-`docker run --publish=7474:7474 --publish=7687:7687 --volume="YOUR_LOCAL_PATH:/data" neo4j`  
+`docker run --publish=7474:7474 --publish=7687:7687 --volume="YOUR_LOCAL_PATH:/data" neo4j`
 Go to [http://localhost:7474/](http://localhost:7474/), login with username `neo4j` and password `neo4j`, then change the password.  
 Use this new password in your `.env` file as `NEO4J_PASSWORD`.  
 In `.env`, set `NEO4J_URI=bolt://neo4j:7687` and `NEO4J_USERNAME=neo4j`.  
