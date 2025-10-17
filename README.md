@@ -2,7 +2,7 @@
 
 **LightRAG** is an advanced Retrieval-Augmented Generation (RAG) framework that allows indexing and querying PDF or TXT documents using a combination of vector and graph databases.
 
-<sub>
+<small>
    
 ## Features
 - Upload PDF or TXT documents and automatically extract text.
@@ -117,4 +117,4 @@ LightRAG/
 ### License
 MIT License
 
-</sub>
+</small>
