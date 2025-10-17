@@ -209,4 +209,4 @@ __marimo__/
 
 # path for neo4j docker 
 project/neo4j_setup/*
-notebook/neo4j_database/*
+notebook/neo4j_database/* 
