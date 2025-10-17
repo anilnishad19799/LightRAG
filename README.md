@@ -34,24 +34,24 @@ LightRAG/
 │   └── docker-compose.yml   Docker Compose configuration
 ```
 
-1. Prerequisites
+## 1. Prerequisites
 - Python 3.10+
 - Docker & Docker Compose 
 - Neo4j instance for graph storage
 - OpenAI API key for embeddings and LLM
 - Cohere API key (optional) for reranking
 
-2. Installation (Local Python)
+## 2. Installation (Local Python)
 1. Clone the repository:
 git clone https://github.com/anilnishad19799/LightRAG.git
 cd LightRAG/project/src
 
-3. Create and activate a virtual environment:
+## 3. Create and activate a virtual environment:
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 
-4. Install dependencies:
+## 4. Install dependencies:
 pip install -r requirements.txt
 
 `This step is important to run code`
@@ -65,7 +65,7 @@ In `.env`, set `NEO4J_URI=bolt://neo4j:7687` and `NEO4J_USERNAME=neo4j`.
 Give the same `YOUR_LOCAL_PATH` as Neo4j volume path in Docker Compose to persist data.  
 
    
-6. Make `.env` file at src/ folder lcoation and add environment variables in `.env`:
+## 6. Make `.env` file at src/ folder lcoation and add environment variables in `.env`:
 NEO4J_URI=bolt://localhost:7687
 NEO4J_USERNAME=neo4j
 NEO4J_PASSWORD=your_password
