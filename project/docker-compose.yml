@@ -8,10 +8,10 @@ services:
       - "7474:7474"   # HTTP Browser
       - "7687:7687"   # Bolt protocol
     environment:
-      - NEO4J_AUTH=neo4j/qBN745CfUWTyzgA
+      - NEO4J_AUTH=neo4j/qBN745CfUWTyzgA #-> give tour neo4j username/password 
     volumes:
       # Map your local path to persist Neo4j data
-      - ../notebook/neo4j_database/data:/data
+      - ../notebook/neo4j_database/data:/data  # give local path where all setup data of docker has been saved
       # - ./neo4j_setup:/data
 
     restart: unless-stopped
