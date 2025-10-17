@@ -43,7 +43,7 @@ LightRAG/
 
 ## 2. Installation (Local Python)
 - Clone the repository:
-- git clone https://github.com/anilnishad19799/LightRAG.git
+- ```git clone https://github.com/anilnishad19799/LightRAG.git```
 - cd LightRAG/project/src
 
 ## 3. Create and activate a virtual environment:
@@ -55,9 +55,9 @@ LightRAG/
 - pip install -r requirements.txt
 
 `This step is important to run code`
-## 5. Neo4j Setup using Docker
+## 5. Neo4j Setup using Docker (This step is important to run code)
 - Open Docker Desktop (Windows) or terminal (Linux/Ubuntu) and run:
-- change below LOCAL_PATH with your PATH and then run below command 
+- Change below YOUR_LOCAL_PATH with your PATH and then run below command 
 - `docker run --publish=7474:7474 --publish=7687:7687 --volume="YOUR_LOCAL_PATH:/data" neo4j`
 - Go to [http://localhost:7474/](http://localhost:7474/), login with username `neo4j` and password `neo4j`, then change the password.  
 - Use this new password in your `.env` file as `NEO4J_PASSWORD`.  
@@ -75,15 +75,15 @@ LightRAG/
 
 ## Running the Application (Local) 
 - cd LightRAG/project/src
-- uvicorn app:app --host 0.0.0.0 --port 8000
-- Open your browser at http://127.0.0.1:8000 to upload PDFs/TXT files and query documents.
+- ```uvicorn app:app --host 0.0.0.0 --port 8000```
+- Open your browser at ```http://127.0.0.1:8000``` to upload PDFs/TXT files and query documents.
 
 ## Running with Docker
 - Build and start containers:
 - cd LightRAG/project
 - docker-compose build
 - docker-compose up
-- Access the app at http://127.0.0.1:8000
+- Access the app at ```http://127.0.0.1:8000```
 
 ## File Loading & Indexing
 - `file_loader.py` handles PDF/TXT loading and text extraction.
