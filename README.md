@@ -54,7 +54,6 @@ LightRAG/
 ## 4. Install dependencies:
 - pip install -r requirements.txt
 
-`This step is important to run code`
 ## 5. Neo4j Setup using Docker (This step is important to run code)
 - Open Docker Desktop (Windows) or terminal (Linux/Ubuntu) and run:
 - Change below YOUR_LOCAL_PATH with your PATH and then run below command 
