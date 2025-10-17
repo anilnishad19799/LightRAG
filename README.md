@@ -59,7 +59,7 @@ LightRAG/
 - Open Docker Desktop (Windows) or terminal (Linux/Ubuntu) and run:
 - Change below YOUR_LOCAL_PATH with your PATH and then run below command 
 - `docker run --publish=7474:7474 --publish=7687:7687 --volume="YOUR_LOCAL_PATH:/data" neo4j`
-- Go to [http://localhost:7474/](http://localhost:7474/), login with username `neo4j` and password `neo4j`, then change the password.  
+- Go to [http://localhost:7474/](http://localhost:7474/) login with username `neo4j` and password `neo4j`, then change the password.  
 - Use this new password in your `.env` file as `NEO4J_PASSWORD`.  
 - In `.env`, set `NEO4J_URI=bolt://neo4j:7687` and `NEO4J_USERNAME=neo4j`.  
 - Give the same `YOUR_LOCAL_PATH` as Neo4j volume path in Docker Compose to persist data.  
