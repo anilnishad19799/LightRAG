@@ -10,6 +10,7 @@
 - Fully Dockerized for easy deployment.
 
 ## Project Structure
+```
 LightRAG/
 ├── notebook/
 │   ├── neo4j.ipynb          Graph database exploration example
@@ -31,7 +32,7 @@ LightRAG/
 │   │   └── requirements.txt Python dependencies
 │   ├── uploaded_files/      Uploaded files for indexing
 │   └── docker-compose.yml   Docker Compose configuration
-
+```
 ## Prerequisites
 - Python 3.10+
 - Docker & Docker Compose 
