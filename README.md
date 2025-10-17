@@ -33,15 +33,15 @@ LightRAG/
 │   ├── uploaded_files/      Uploaded files for indexing
 │   └── docker-compose.yml   Docker Compose configuration
 ```
-```
-## Prerequisites
+
+1. Prerequisites
 - Python 3.10+
 - Docker & Docker Compose 
 - Neo4j instance for graph storage
 - OpenAI API key for embeddings and LLM
 - Cohere API key (optional) for reranking
 
-## Installation (Local Python)
+2. Installation (Local Python)
 1. Clone the repository:
 git clone https://github.com/anilnishad19799/LightRAG.git
 cd LightRAG/project/src
@@ -73,7 +73,6 @@ RERANK_MODEL=cohere_model
 RERANK_BINDING_API_KEY=cohere_api_key
 RERANK_BINDING_HOST=cohere_host_api
 
-```
 ## Running the Application (Local) 
 cd LightRAG/project/src
 uvicorn app:app --host 0.0.0.0 --port 8000
