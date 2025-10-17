@@ -79,11 +79,11 @@ LightRAG/
 - Open your browser at http://127.0.0.1:8000 to upload PDFs/TXT files and query documents.
 
 ## Running with Docker
-1. Build and start containers:
-cd LightRAG/project
-docker-compose build
-docker-compose up
-2. Access the app at http://127.0.0.1:8000
+- Build and start containers:
+- cd LightRAG/project
+- docker-compose build
+- docker-compose up
+- Access the app at http://127.0.0.1:8000
 
 ## File Loading & Indexing
 - `file_loader.py` handles PDF/TXT loading and text extraction.
